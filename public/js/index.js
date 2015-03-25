@@ -1,11 +1,10 @@
-
-window.onload = function() {
+$(document).ready(function() {
 	
 	var monitor;
 
 	var outputComment;
 
-	var socket = io();
+	var socket = io.connect("http://hongyan.cqupt.edu.cn/chat_video", { path : "/chat_video" });
             
 
 
@@ -358,5 +357,5 @@ window.onload = function() {
 		}
 
 	}
-}
+});
 

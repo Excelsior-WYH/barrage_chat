@@ -1,7 +1,7 @@
 
 
 var router = require('express').Router();
-var IndexController = require('../Controller/IndexController.js');
+var IndexController = require('../controller/IndexController.js');
 
 /* GET home page. */
 router.get('/', IndexController.index);
